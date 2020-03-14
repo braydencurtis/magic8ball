@@ -23,6 +23,7 @@ $(document).ready(function(){
 
 
 
+        $("#answer").text(randomAnswer);
 
     };
 
