@@ -19,6 +19,8 @@ $(document).ready(function(){
         $("#answer").text(answer);
         //Switch ball image to answer side
         $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
+        //Shake Magic 8-ball
+        $("#8ball").effect("shake");
         // Fade in answer over 4 seconds
         $("#answer").fadeIn(4000);
 
@@ -36,6 +38,7 @@ $(document).ready(function(){
 
         // Delay prompt so image has time to change
         setTimeout(function(){
+            // show prompt
             var question = prompt("ASK A YES/NO QUESTION!");
             magic8Ball.askQuestion(question);}
         , 500);
