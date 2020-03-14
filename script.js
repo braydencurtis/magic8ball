@@ -13,6 +13,7 @@ $(document).ready(function(){
         var answer = this.listOfAnswers[randomIndex];
 
         $("#answer").text(answer);
+        $("#answer").fadeIn(4000);
 
         console.log(question);
         console.log(answer);
