@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     var onClick = function() {
         var question = prompt("ASK A YES/NO QUESTION!");
-        magic8Ball.askQuestion(question);
+        magic8Ball.askQuestion = question;
     }
 
 
